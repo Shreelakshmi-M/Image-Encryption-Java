@@ -306,3 +306,172 @@ Encryption Key	      Expected Result
 - ```150```	RGB values shifted by 150
 - ```200```RGB values shifted by 200
 - ```255```	RGB values shifted by 255
+
+### Input Validation
+
+The program accepts encryption keys only within the range:
+
+```0 ≤ Key ≤ 255```
+
+If a value outside this range is entered, the program displays:
+
+```Invalid key! Enter a value between 0 and 255.```
+
+If the encryption key cannot be converted into an integer, the program
+handles the input error.
+
+### Error Handling
+
+The program handles common errors during execution.
+
+Invalid Encryption Key
+
+If the key is less than ```0``` or greater than ```255```, the program rejects
+the input.
+
+Missing Input Image
+
+If ```input.png``` is not found, the program displays:
+
+```Input image not found!```
+
+## Invalid Input
+
+If the provided encryption key is not a valid integer, the program
+displays an appropriate error message.
+
+### Sample Execution
+
+Example command:
+
+```java ImageEncoder 150```
+
+Expected output:
+```
+Image encrypted successfully!
+Encryption Key: 150
+Output File: encoded_image.png
+```
+
+### Input and Output
+## Input Image
+
+The original image used for processing is:
+
+```input.png```
+
+## Encrypted Image
+
+After applying the selected encryption key, the program generates:
+
+```encoded_image.png```
+
+The output maintains the original image dimensions while the RGB
+values are transformed.
+
+### Project Workflow
+
+             Input Image
+                  │
+                  ▼
+          Read Image File
+                  │
+                  ▼
+            Access Pixel
+                  │
+                  ▼
+            Extract ARGB
+                  │
+                  ▼
+        Enter Encryption Key
+                  │
+                  ▼
+          Transform RGB
+       (RGB + Key) mod 256
+                  │
+                  ▼
+         Reconstruct Pixel
+                  │
+                  ▼
+        Process All Pixels
+                  │
+                  ▼
+          Save Output Image
+                  │
+                  ▼
+        encoded_image.png
+### Concepts Demonstrated
+## Java Programming
+- Classes and objects
+- Exception handling
+- Command-line arguments
+- File handling
+- Loops
+- Conditional statements
+
+## Image Processing
+- Image reading and writing
+- Pixel access
+- RGB extraction
+- Pixel reconstruction
+- Image manipulation
+
+## Mathematical Concepts
+- Modular arithmetic
+- Integer transformation
+- RGB value range limitation
+
+### Learning Outcomes
+
+Through this project, I gained practical understanding of:
+
+- Java-based image processing
+- Pixel-level RGB manipulation
+- ```BufferedImage``` and ```ImageIO```
+- File handling in Java
+- Modular arithmetic
+- Command-line arguments
+- Input validation
+- Exception handling
+- Basic image encryption concepts
+
+### Google Colab Demonstration
+
+The project is also demonstrated interactively using Google Colab.
+
+## Open in Google Colab
+
+The Colab notebook demonstrates the complete project workflow,
+including:
+
+- Project introduction
+- Input image
+- Java source-code creation
+- Java compilation
+- Encryption key input
+- Java program execution
+- Encrypted image generation
+- Output image display
+
+### Notebook
+
+The repository contains the following notebook:
+
+```Image_Encryption_Colab.ipynb```
+
+The notebook provides a step-by-step interactive demonstration of the
+Java image encryption project.
+
+### Future Enhancements
+
+The project can be further extended by:
+
+- Implementing a corresponding image decryption function
+- Adding a graphical user interface (GUI)
+- Supporting multiple image formats
+- Allowing users to select images through a file browser
+- Implementing stronger cryptographic algorithms
+- Adding password-based key generation
+- Supporting batch image encryption
+- Combining encryption and decryption in a single application
+
