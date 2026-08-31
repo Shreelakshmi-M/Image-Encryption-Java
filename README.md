@@ -299,10 +299,10 @@ This is the transformed/encrypted version of the input image.
 
 The program can be tested with different encryption keys.
 
-Encryption Key	Expected Result
+Encryption Key	      Expected Result
 - ```0```            RGB values remain unchanged
-```50```	RGB values shifted by 50
-```100```	RGB values shifted by 100
-```150```	RGB values shifted by 150
-```200```RGB values shifted by 200
-```255```	RGB values shifted by 255
+- ```50```	RGB values shifted by 50
+- ```100```	RGB values shifted by 100
+- ```150```	RGB values shifted by 150
+- ```200```RGB values shifted by 200
+- ```255```	RGB values shifted by 255
