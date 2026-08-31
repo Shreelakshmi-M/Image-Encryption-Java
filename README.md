@@ -1,4 +1,4 @@
-# Image Encryption Using Pixel Value Transformation in Java
+### Image Encryption Using Pixel Value Transformation in Java
 
 A Java-based image encryption project that performs pixel-level RGB
 transformation using a user-defined encryption key and modular arithmetic.
@@ -57,12 +57,12 @@ The main objectives of this project are:
 
 The program follows a pixel-level transformation approach.
 
-### Step 1: Read the Input Image
+# Step 1: Read the Input Image
 
 The program reads an image named `input.png` using Java's
 `BufferedImage` and `ImageIO` classes.
 
-### Step 2: Access Individual Pixels
+# Step 2: Access Individual Pixels
 
 Every pixel in the image is accessed using its X and Y coordinates.
 
@@ -71,7 +71,7 @@ for every row
     for every column
         access pixel
 ```
-### Step 3: Extract Pixel Components
+# Step 3: Extract Pixel Components
 
 Each pixel contains four components:
 
@@ -83,7 +83,7 @@ Each pixel contains four components:
 The program extracts these components from the pixel using bitwise
 operations.
 
-### Step 4: Apply the Encryption Key
+# Step 4: Apply the Encryption Key
 
 The user provides an encryption key between `0` and `255`.
 
@@ -97,7 +97,7 @@ R' = (R + Key) mod 256
 G' = (G + Key) mod 256
 B' = (B + Key) mod 256
 ```
-### Step 5: Reconstruct the Pixel
+# Step 5: Reconstruct the Pixel
 
 After transforming the RGB values, the program combines the Alpha,
 Red, Green and Blue components to create the new pixel.
@@ -111,7 +111,7 @@ Alpha + Transformed Red + Transformed Green + Transformed Blue
 
 The newly created pixel replaces the original pixel in the image.
 
-### Step 6: Process All Pixels
+# Step 6: Process All Pixels
 
 The same transformation is repeated for every pixel in the image.
 
@@ -134,7 +134,7 @@ Next Pixel
 This process continues until all pixels in the image have been
 processed.
 
-### Step 7: Generate the Encrypted Image
+# Step 7: Generate the Encrypted Image
 
 After processing all pixels, the transformed image is saved using
 ```
