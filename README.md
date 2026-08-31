@@ -1,11 +1,11 @@
-# 🔐 Image Encryption Using Pixel Value Transformation in Java
+# Image Encryption Using Pixel Value Transformation in Java
 
 A Java-based image encryption project that performs pixel-level RGB
 transformation using a user-defined encryption key and modular arithmetic.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project implements a basic image encryption technique using Java.
 
@@ -29,18 +29,16 @@ This project demonstrates practical concepts of:
 
 ---
 
-## 👤 Author
+## Author
 
 **Your Full Name**
 
 B.E. – Electrical & Electronics Engineering  
 BNM Institute of Technology, Bengaluru
 
-**GitHub:** [@Chinnu200519](https://github.com/Chinnu200519)
-
 ---
 
-## 🎯 Objectives
+## Objectives
 
 The main objectives of this project are:
 
@@ -55,7 +53,7 @@ The main objectives of this project are:
 
 ---
 
-## ⚙️ Working Principle
+## Working Principle
 
 The program follows a pixel-level transformation approach.
 
@@ -400,6 +398,7 @@ values are transformed.
                   │
                   ▼
         encoded_image.png
+
 ### Concepts Demonstrated
 ## Java Programming
 - Classes and objects
