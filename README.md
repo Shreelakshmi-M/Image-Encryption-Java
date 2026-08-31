@@ -214,12 +214,13 @@ The same operation is performed on every pixel in the image.
 ### Technologies Used
 
 - Java -Core programming language
-Java AWT -Image processing functionality
-BufferedImage	Accessing and manipulating image pixels
-ImageIO	Reading and writing image files
-Modular Arithmetic	RGB value transformation
-Command-Line Arguments	Passing the encryption key
-📁 Project Structure
+- Java AWT -Image processing functionality
+- BufferedImage	-Accessing and manipulating image pixels
+- ImageIO	-Reading and writing image files
+- Modular Arithmetic	-RGB value transformation
+- Command-Line Arguments -Passing the encryption key
+
+###  Project Structure
 ```
 Image-Encryption-Java/
 │
@@ -240,3 +241,68 @@ Image-Encryption-Java/
 │
 └── .gitignore
         └── Git ignored files
+```
+
+### How to Run the Project
+Prerequisites
+Install the Java Development Kit (JDK).
+
+Check whether Java is installed:
+
+```java -version```
+
+Check the Java compiler:
+
+```javac -version```
+
+Step 1: Clone the Repository
+```git clone https://github.com/Chinnu200519/Image-Encryption-Java.git```
+
+Navigate to the project folder:
+
+```cd Image-Encryption-Java```
+
+Step 2: Check the Input Image
+
+Make sure the input image is named:
+
+```input.png```
+
+and is located in the same folder as:
+
+```ImageEncoder.java```
+
+Step 3: Compile the Program
+```javac ImageEncoder.java```
+
+Step 4: Run the Program
+
+Provide the encryption key as a command-line argument:
+
+```java ImageEncoder 150```
+
+Here, ```150``` is the encryption key.
+
+The valid key range is:
+
+```0 to 255```
+
+Step 5: View the Output
+
+After successful execution, the program generates:
+
+```encoded_image.png```
+
+This is the transformed/encrypted version of the input image.
+
+### Testing
+
+The program can be tested with different encryption keys.
+
+Encryption Key	Expected Result
+```0```            RGB values remain unchanged
+```50```	RGB values shifted by 50
+```100```	RGB values shifted by 100
+```150```	RGB values shifted by 150
+```200```RGB values shifted by 200
+```255```	RGB values shifted by 255
