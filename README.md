@@ -1,4 +1,4 @@
-### Image Encryption Using Pixel Value Transformation in Java
+# Image Encryption Using Pixel Value Transformation in Java
 
 A Java-based image encryption project that performs pixel-level RGB
 transformation using a user-defined encryption key and modular arithmetic.
