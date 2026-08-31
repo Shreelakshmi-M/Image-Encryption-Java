@@ -253,14 +253,14 @@ Check the Java compiler:
 
 ```javac -version```
 
-Step 1: Clone the Repository
+# Step 1: Clone the Repository
 ```git clone https://github.com/Chinnu200519/Image-Encryption-Java.git```
 
 Navigate to the project folder:
 
 ```cd Image-Encryption-Java```
 
-Step 2: Check the Input Image
+# Step 2: Check the Input Image
 
 Make sure the input image is named:
 
@@ -270,10 +270,10 @@ and is located in the same folder as:
 
 ```ImageEncoder.java```
 
-Step 3: Compile the Program
+# Step 3: Compile the Program
 ```javac ImageEncoder.java```
 
-Step 4: Run the Program
+# Step 4: Run the Program
 
 Provide the encryption key as a command-line argument:
 
@@ -285,7 +285,7 @@ The valid key range is:
 
 ```0 to 255```
 
-Step 5: View the Output
+# Step 5: View the Output
 
 After successful execution, the program generates:
 
