@@ -23,6 +23,40 @@ B' = (B + Key) mod 256
 
 The transformed RGB values are combined with the original alpha value to create the output pixel.
 
+## Example Calculation
+
+Suppose a pixel has the following RGB values:
+
+```text
+R = 200
+G = 100
+B = 50
+Key = 30
+```
+
+Applying the encryption formula:
+
+```text
+R' = (200 + 30) mod 256 = 230
+G' = (100 + 30) mod 256 = 130
+B' = (50 + 30) mod 256 = 80
+```
+
+Therefore, the original pixel:
+
+```text
+RGB(200, 100, 50)
+```
+
+becomes the encrypted pixel:
+
+```text
+RGB(230, 130, 80)
+```
+
+The modulo 256 operation keeps every RGB value within the valid range of **0–255**.
+
+
 ## Technologies Used
 
 * Java
