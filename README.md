@@ -1,4 +1,4 @@
-# Image Encryption Using Java
+# Basic Image Encryption Using Pixel-Level RGB Transformation in Java
 
 A basic **Java-based image encryption project** that performs pixel-level RGB transformation using a user-defined key and modular arithmetic.
 
